@@ -1,0 +1,34 @@
+\documentclass{report}
+
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage[a4paper, left=1.8cm, right=1.8cm, top=1.8cm, bottom=1.8cm]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{array}  
+\usepackage{tabularx}  
+\usepackage{tikz}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+
+
+\begin{document}
+\input{title/title.tex}
+\renewcommand{\baselinestretch}{1.0}
+\fontsize{13}{15.6}\selectfont 
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Mục lục}
+\listoffigures
+\addcontentsline{toc}{chapter}{Danh sách hình vẽ}
+\listoftables
+\addcontentsline{toc}{chapter}{Danh sách bảng}
+
+
+\include{cau1/cau1.tex}
+\include{cau2/cau2.tex}
+
+\include{ref/ref.tex}
+
+
+\end{document}
